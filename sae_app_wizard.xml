@@ -1,0 +1,33 @@
+<appwizard>
+    <introduction> 
+        <name>HDwiki for sae</name>
+        <author>hdwiki</author>
+        <icon>default_app_icon</icon>
+        <homepage>http://code.google.com/p/hdwiki4sae/</homepage>
+        <description>
+        <![CDATA[
+        HDwiki是专为中文用户设计和开发，程序源代码100%完全开放的一个采用 PHP 和 MySQL 数据库构建的高效的中文百科建站解决方案，在尊重版权的前提下能极大的满足站长对于网站程序进行二次开发。
+        </p>
+        ]]>
+        </description>
+    </introduction>
+    <platform> 
+        <services> 
+            <service name="hdwiki"  params="wiki数据存储">Storage</service>
+            <service size="12M">Memcache</service>
+            <service>Mysql</service> 
+        </services>
+        <appconfig> 
+            <tpl>
+            <![CDATA[
+name: <<appname>>
+version: <<version>>
+            ]]>
+            </tpl>
+        </appconfig>
+    </platform>
+    <code> 
+    <initScript>install.php</initScript>
+    </code>
+</appwizard>
+
